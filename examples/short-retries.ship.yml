@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://letsship.ai/schema/ship.yml.json
+#
+# Hand a mission back to a person sooner. SHIP stops the loop after 10
+# attempts, or when CI, review or QA fails the same way twice in a row.
+version: 1
+deployments: {}
+
+retries:
+  maxRetries: 10
+  ciOscillationLimit: 2
+  reviewOscillationLimit: 2
+  qaOscillationLimit: 2

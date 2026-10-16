@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://letsship.ai/schema/ship.yml.json
+#
+# The pi coding agent writes the code on an open-weight model, through your
+# own OpenRouter key. The other roles keep the platform defaults.
+# In the SWE-in-a-team study, this builder resolved 20 of 20 tickets at
+# $3.36 per resolved ticket: https://letsship.ai/blog/swe-in-a-team
+version: 1
+deployments: {}
+
+agents:
+  builder:
+    harness: pi
+    model: deepseek/deepseek-v4-flash

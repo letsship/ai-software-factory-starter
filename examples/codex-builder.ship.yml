@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://letsship.ai/schema/ship.yml.json
+#
+# codex writes the code, and claude-code plans, reviews and tests it.
+# A second vendor's model reviews the first vendor's work.
+version: 1
+deployments: {}
+
+agents:
+  builder:
+    harness: codex
+    model: codex
+  reviewer:
+    harness: claude-code
+    model: opus

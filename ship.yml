@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://letsship.ai/schema/ship.yml.json
+#
+# The platform defaults, written out so that you can change one role at a time.
+# Every role runs claude-code on the newest Opus model. Edit a role, commit the
+# file to your default branch, and the next mission uses it.
+version: 1
+
+# Nothing to deploy yet. Add a `preview` environment when you want each pull
+# request deployed by your own pipeline: https://letsship.ai/docs/configuration/deployments
+deployments: {}
+
+agents:
+  planner:
+    harness: claude-code
+    model: opus
+  builder:
+    harness: claude-code
+    model: opus
+  reviewer:
+    harness: claude-code
+    model: opus
+  qa:
+    harness: claude-code
+    model: opus

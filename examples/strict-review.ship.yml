@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://letsship.ai/schema/ship.yml.json
+#
+# A person approves the plan before the Builder starts, and the Reviewer
+# sends work back for suggestions as well as critical findings.
+version: 1
+deployments: {}
+
+agents:
+  planner:
+    checkpoint: true
+  reviewer:
+    rejectOn: suggestion
+    # Extra review rules, appended to SHIP's own reviewer instructions.
+    prompt: .ship/agents/reviewer.md
