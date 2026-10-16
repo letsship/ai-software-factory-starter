@@ -21,7 +21,7 @@ Each role runs the coding agent (harness) and the model that you set in `ship.ym
 2. Commit it to your default branch.
 3. Assign a Linear issue to SHIP, or comment `@SHIP` on a GitHub issue.
 
-SHIP checks the file against its [JSON Schema](https://letsship.ai/schema/ship.yml.json). The first line of each starter points your editor at that schema, so you get completion and errors as you type. A file that fails the check loses all of its settings, so keep that line.
+SHIP checks the file against its [JSON Schema](https://letsship.ai/schema/ship.yml.json). The first line of each starter points your editor at that schema, so you get completion and errors as you type. A file that fails the check loses all of its settings, and that line shows the error in your editor before you commit.
 
 ## Read the numbers behind the examples
 
